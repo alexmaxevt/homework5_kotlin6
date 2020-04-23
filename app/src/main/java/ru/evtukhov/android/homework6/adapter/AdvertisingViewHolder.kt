@@ -117,7 +117,7 @@ class AdvertisingViewHolder (adapter: PostAdapter, view: View): BaseViewHolder(a
             textViewDate.text = post.dateText
             author.text = post.author
             content.text = post.content
-            image.setImageResource(post.imageLink)
+            post.imageLink?.let { image.setImageResource(it) }
             eventTitle.text = "COMERC"
             likeCount.text = (
                     if (post.likedCount == 0) {

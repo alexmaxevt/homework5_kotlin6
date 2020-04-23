@@ -26,7 +26,7 @@ fun viewTypePost (viewType: Int): PostType {
     }
 }
 
-class PostAdapter (val posts: List<Post>): RecyclerView.Adapter<BaseViewHolder>() {
+class PostAdapter(val posts: List<Post>): RecyclerView.Adapter<BaseViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int) =
         when (viewTypePost(viewType)) {
