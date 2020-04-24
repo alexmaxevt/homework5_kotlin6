@@ -44,15 +44,15 @@ class PostAdapter(val posts: List<Post>): RecyclerView.Adapter<BaseViewHolder>()
             )
             PostType.VIDEO -> VideoViewHolder(
                 this,
-                LayoutInflater.from(parent.context).inflate(R.layout.post_video_card, parent, false)
+                LayoutInflater.from(parent.context).inflate(R.layout.post_card, parent, false)
             )
             PostType.ADVERTISING -> AdvertisingViewHolder(
                 this,
-                LayoutInflater.from(parent.context).inflate(R.layout.post_advertising_card, parent, false)
+                LayoutInflater.from(parent.context).inflate(R.layout.post_card, parent, false)
             )
             PostType.EVENT -> EventViewHolder(
                 this,
-                LayoutInflater.from(parent.context).inflate(R.layout.post_event_card, parent, false)
+                LayoutInflater.from(parent.context).inflate(R.layout.post_card, parent, false)
             )
         }
 
